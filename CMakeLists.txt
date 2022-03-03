@@ -32,6 +32,7 @@ set(COMPILER_SETTINGS
 
 
 option(USE_THIRDPARTY_EXAMPLES "Use thirdparty examples" OFF)
+option(USE_EXAMPLE "Use example" OFF)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ")
 
@@ -54,4 +55,6 @@ if (USE_THIRDPARTY_EXAMPLES)
     include(${CMAKE_CURRENT_LIST_DIR}/example/threadedpinger/CMakeLists.txt)
 endif()
 
-include(${CMAKE_CURRENT_LIST_DIR}/example/simplemonitor/CMakeLists.txt)
+if (USE_EXAMPLE)
+	include(${CMAKE_CURRENT_LIST_DIR}/example/simplemonitor/CMakeLists.txt)
+endif()
