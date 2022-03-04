@@ -47,8 +47,7 @@ if (USE_THIRDPARTY_EXAMPLES)
     include_directories(${CMAKE_CURRENT_LIST_DIR}/thirdparty/uWebSockets/uSockets)
 endif()
 
-
-include(${CMAKE_CURRENT_LIST_DIR}/lib/CMakeLists.txt)
+ADD_SUBDIRECTORY(lib)
 if (USE_THIRDPARTY_EXAMPLES)
     include(${CMAKE_CURRENT_LIST_DIR}/tests/CMakeLists.txt)
     include(${CMAKE_CURRENT_LIST_DIR}/example/LinuxSystemMonitor_WebsocketService/CMakeLists.txt)
