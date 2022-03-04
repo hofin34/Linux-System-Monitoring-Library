@@ -58,3 +58,5 @@ endif()
 if (USE_EXAMPLE)
 	include(${CMAKE_CURRENT_LIST_DIR}/example/simplemonitor/CMakeLists.txt)
 endif()
+
+install(TARGETS linuxmonitoring DESTINATION .)
