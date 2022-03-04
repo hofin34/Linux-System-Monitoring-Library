@@ -6,6 +6,8 @@
  * Copyright (c) Daniel Fuchs
  *
  */
-#include "timer.hpp"
+#include <linux_monitoring/util/timer.hpp>
 
-std::shared_ptr<Timer> Timer::instance = nullptr;
+namespace linux_monitoring::util{
+    std::shared_ptr<Timer> Timer::instance = nullptr;
+}
