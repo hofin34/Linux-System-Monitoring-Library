@@ -10,7 +10,6 @@ set(COMPILER_SETTINGS
     -Wextra
     -g
     -ggdb
-    -Werror
     -Wshadow
     -Wold-style-cast
     -Wsign-conversion
